@@ -1,0 +1,10 @@
+.
+.gitignore
+.vscode
+.vscode/launch.json
+package.json
+test
+test/should-be-an-event.txt
+walk_dir_tree_with_async_generators.js
+walk_dir_tree_with_events.js
+yarn.lock

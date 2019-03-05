@@ -1,0 +1,16 @@
+{
+  "name": "josh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm i; node walk_dir_tree_with_async_generators.js; echo ---; node walk_dir_tree_with_events.js",
+    "test": "node walk_dir_tree_with_async_generators.js >> async-gen.out; node walk_dir_tree_with_events.js > async-events.out; diff -q *.out",
+    "run:gen": "node walk_dir_tree_with_async_generators.js ",
+    "run:events": "node walk_dir_tree_with_events.js"
+  },
+  "dependencies": {
+    "rx-helper": "^1.0.1",
+    "rxjs": "^6.4.0"
+  }
+}
